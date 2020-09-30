@@ -72,7 +72,7 @@ Disks on nodes used by Rook for osds can be reset to a usable state with the fol
 
 ```console
 #!/usr/bin/env bash
-DISK="/dev/sdb"
+DISK="/dev/sdX"
 # Zap the disk to a fresh, usable state (zap-all is important, b/c MBR has to be clean)
 # You will have to run this step for all disks.
 sgdisk --zap-all $DISK
